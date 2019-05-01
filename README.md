@@ -31,10 +31,17 @@
 	
 # 场景：1，只对文件进行了修改，未执行任何 git 操作；2，执行了 add 操作后回退；3，执行了 commit 操作后回退；4，执行了 push 操作后回退
 
-	git checkout -- changedFileName # 场景1，丢弃修改的操作
+	git checkout -- changedFileName # 场景1，只进行了修改操作。丢弃修改的操作
 	
 	
-	git reset HEAD .	# 丢弃追踪的文件
+	git reset HEAD .	# 场景2，执行 git add后。丢弃追踪的文件
 	git checkout -- . # 丢弃修改的操作
+	
+	
+	git reflog # 场景3，执行 commit 操作之后。查看版本变动记录
+	
+	git reset --hard head^ # 回退一个版本
+	或者
+	git reset --hard  HEAD@{5} # 回退到指定版本
 	
 	
