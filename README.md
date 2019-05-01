@@ -34,3 +34,7 @@
 	git checkout -- changedFileName # 场景1，丢弃修改的操作
 	
 	
+	git reset HEAD .	# 丢弃追踪的文件
+	git checkout -- . # 丢弃修改的操作
+	
+	
