@@ -18,3 +18,8 @@
 	
 	
 	git push origin branchName # 将修改后的变动推送到远程并在远程建立 branchName 分支
+	
+	
+	git checkout master # 切换到 master 切换到 master 分支
+	
+	git merge branchName # 将修改合并到 master 分支
