@@ -23,3 +23,7 @@
 	git checkout master # 切换到 master 切换到 master 分支
 	
 	git merge branchName # 将修改合并到 master 分支
+	
+	git branch -d branchName # 删除本地分支
+	
+	git push origin :branchName # 删除远程分支
