@@ -30,3 +30,7 @@
 	
 	
 # 场景：1，只对文件进行了修改，未执行任何 git 操作；2，执行了 add 操作后回退；3，执行了 commit 操作后回退；4，执行了 push 操作后回退
+
+	git checkout -- changedFileName # 场景1，丢弃修改的操作
+	
+	
